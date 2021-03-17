@@ -1,16 +1,23 @@
-import "./App.css";
 
-function Title() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div className="headTitle">
-        <h1>Shopping Cart</h1>
-        <p>Home Shopping Cart</p>
-        </div>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import "./App.css";
+import Product from './Product.js';
+import Payment from './Payment.js';
+import Title from './Title.js';
+
+
+class App extends Component {
+  render() {
+    return (  
+      <div>
+      <Title/>
+      <Product />
+      <Payment/>
+      </div>
+    );
+  }
 }
 
-export default Title;
+
+export default App;
+

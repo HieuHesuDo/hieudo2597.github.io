@@ -12,6 +12,7 @@ input[type=number] {
 .productWrap {
     width: 1000px;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
   
   .product1 {
