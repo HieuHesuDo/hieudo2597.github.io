@@ -1,4 +1,4 @@
-export default function Body({products, updateQuantity, removeProduct}){
+export default function Body({ products, updateQuantity, removeProduct }) {
   const productList = products.map((product) => (
     <li className="row" key={product.id}>
       <div className="col left">
@@ -51,15 +51,13 @@ export default function Body({products, updateQuantity, removeProduct}){
 
   return (
     <section className="container">
-      {/* Inline If Cách 1 */}
-      {/* {products.length > 0 && <ul className="products">{productList}</ul>}
-        {products.length <= 0 && <h1>NO PRODUCT</h1>} */}
-
-      {/* Inline If Cách 2 */}
       {products.length > 0 ? (
         <ul className="products">{productList}</ul>
       ) : (
-        <h1>NO PRODUCT</h1>
+        <div>
+          <h1>Không có sản phẩm nào</h1>
+          <button>Quay lại mua hàng</button>
+        </div>
       )}
     </section>
   );
